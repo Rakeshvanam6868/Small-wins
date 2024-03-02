@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Roboto",sans-serif;
+}
+.track{
+    color:black;
+    font-weight:bold;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding-top:20px;
+}
+
+.track h1{
+    padding:20px 0px 7px 0px; 
+}
+
+.track h3{
+    padding-bottom:15px;
+}
+
+button{
+    position:relative;
+    text-decoration:none;
+    padding:8px 10px;
+    color:#fff;
+    background:linear-gradient(45deg,#0ce39a,#69007f,#fc0987);
+    border-radius:11px;
+    padding:10px 20px;
+    font-size:1rem;
+}
+
+button span{
+    z-index:1;
+    position:relative;
+}
+
+button::before{
+    content: "";
+    position:absolute;
+    inset:1px;
+    background:#272727;
+    border-radius:9px;
+    transition:0.5s;
+}
+
+button:hover::before{
+    opacity:0.7;
+}
+
+button::after{
+    content: "";
+    position:absolute;
+    inset:0px;
+    background:linear-gradient(45deg,#0ce39a,#69007f,#fc0987);
+    border-radius:9px;
+    transition:0.5s;
+    opacity:0;
+    filter:blur(20px);
+}
+
+button:hover:after{
+    opacity:1;
+}
+
+.create{
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-direction:column;
+    margin-top:20px;
+    padding:40px 0px 10px 15px;
+}
+
+.create h3{
+    padding-bottom:5px;
+    color:#272727;
+}
+
+.create p{
+    padding-top:3px;
+    color:grey;
+}
